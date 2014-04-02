@@ -18,21 +18,23 @@ public interface IProjectManagement {
     /**
      * This method will create a project which is related to PM
      * @param pmHost the host name to create a project
-     * @param apiKey API key
+     * @param username username
+     * @param password password
      * @param projectName  project name
      * @return  <code>true</code> if project created successfully
      */
 
-    public boolean createPMSProject(String pmHost, String apiKey, String projectName);
+    public boolean createPMSProject(String pmHost, String username,String password, String projectName);
 
     /**
      * check whether project is exists or not
      * @param pmHost   Host name of the API
-     * @param apiKey   Basic API key
+     * @param username username
+     * @param password password
      * @param projectName  name of the project to search
      * @return  <code>true</code> if project already exists
      */
-    public boolean isPMSProjectExist(String pmHost, String apiKey, String projectName);
+    public boolean isPMSProjectExist(String pmHost, String username,String password, String projectName);
 
 
 }
